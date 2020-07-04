@@ -45,8 +45,48 @@ body {
 .quote cite {
   font-family: "Roboto-ThinItalic", sans-serif;
 }
-
-
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.flower img {
+  display: block;
+  height: 200px;
+}
+.link {
+  text-decoration: none;
+  transition-duration: .2s;
+}
+.link:link {
+  color: #000;
+}
+.link:visited {
+  color: #000;
+}
+.link:hover {
+  color: #7e7e7e;
+}
+.link:active {
+  color: #7e7e7e;
+}
+.email a[href^="mailto"]::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  background-image: url(../img/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.copyright {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  border-top: 1px solid #7e7e7e;
+}
 
 @font-face {
   font-family: 'L-CHairlineHQ';
