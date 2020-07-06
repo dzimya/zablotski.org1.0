@@ -49,11 +49,8 @@ body {
 }
 .top-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
-}
-.flower {
-  min-width: 150px;
   height: 200px;
   background-image: url(../img/flower.png);
   background-repeat: no-repeat;
@@ -103,9 +100,8 @@ body {
   	font-size: 90px;
   	line-height: 70px;
   }
-  .flower {
+  .top-footer {
   	height: 150px;
-  	min-width: 100px;
   }
 }
 @media (max-width: 420px) {
@@ -114,13 +110,10 @@ body {
   	line-height: 60px;
   	margin-bottom: 40px;
   }
-  .flower {
-  	display: none;
-  }
   .top-footer {
-    display: flex;
+  	height: auto;
     justify-content: center;
-    align-items: flex-end;
+    background-image: none;
   }
 }
 
